@@ -1,0 +1,36 @@
+@startuml ComponentDiagram
+
+skinparam dpi 300
+
+circle "Props & State" {}
+
+node "Component" {
+
+}
+
+circle "View" {}
+
+"Props & State" -> "Component"
+
+"Component" -> "View"
+
+@enduml
+
+@startuml FunctionDiagram
+
+skinparam dpi 300
+
+circle "Arguments" {}
+
+node "Function" {
+
+}
+
+circle "Output" {}
+
+"Arguments" -> "Function"
+
+"Function" -> "Output"
+
+@enduml
+
