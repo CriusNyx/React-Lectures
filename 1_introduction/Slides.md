@@ -122,11 +122,9 @@ function App() {
     setCount(count + 1);
   }
 
-  const noteText = `Count ${count}`
-
   return (
     <>
-      <Note text={noteText} />
+      <Note text={`Count ${count}`} />
       <button onClick={handleButton}>
         Increase
       </button>
@@ -139,9 +137,9 @@ function App() {
 
 # Hooks
 
-Hooks are special functions that automatically update your component when they change.
-React has some useful built in hooks such as `useState`, `useRef` and `useContext`
-Today we're going to cover `useState` and `useContext`
+- Hooks are special functions that automatically update your component when they change.
+- React has some useful built in hooks such as `useState`, `useRef` and `useContext`
+- Today we're going to cover `useState` and `useContext`
 
 ---
 
@@ -242,10 +240,10 @@ return <button onClick={handleButton}/>
 
 # Hook Setters
 
-A reducer is a function which takes the original character as an argument
+- A reducer is a function which takes the original character as an argument
 and returns a new character as the output
 
-When you call the hook you pass in a reducer function to it to change it's value
+- When you call the hook you pass in a reducer function to it to change it's value
 
 ---
 
@@ -312,8 +310,6 @@ function MyComponent(){
 
 # Hook Rules
 
-## Hooks must only be used inside components.
-
 ```tsx
 // Wrong!
 const [state, setState] = useState('');
@@ -328,8 +324,6 @@ function MyComponent(){
 ---
 
 # Hook Rules
-
-## Hooks must only be used inside components.
 
 ```tsx
 function MyComponent(){
@@ -362,9 +356,9 @@ function MyComponent(){
 }
 ```
 
-# Hook Rules
+---
 
-## Hooks must never be called conditionally
+# Hook Rules
 
 ```tsx
 function MyComponent(){
@@ -375,6 +369,8 @@ function MyComponent(){
   }
 }
 ```
+
+---
 
 # Node
 
@@ -428,17 +424,20 @@ cd project-name
 npm install
 npm run dev
 ```
-# Lecture Exercise
+
+---
+
+# Exercise
 
 ---
 
 # Context
 
-A context is an object that allows you to easily 
-access state in child components.
+- A context is an object that allows you to easily 
+  access state in child components.
 
-You can create a context higher up in the application,
-and then it can be accessed by all your children.
+- You can create a context higher up in the application,
+  and then it can be accessed by all your children.
 
 ---
 
@@ -570,3 +569,7 @@ function MyCharacterEditor(){
   )
 }
 ```
+
+---
+
+# Exercise
