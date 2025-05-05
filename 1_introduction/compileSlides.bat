@@ -1,1 +1,0 @@
-npx @marp-team/marp-cli@latest Slides.md -o Slides.html
