@@ -65,31 +65,4 @@ const [state, setState] = useState<Note>();
 
 Set the value and onChange event handlers on inputs to update the state.
 
-# Problem 3
-
-## Create an interface called `NoteEditorProps`
-
-```tsx
-interface NoteEditorProps {
-  value: Note;
-  onChange(note: Note): void;
-}
-```
-
-Remove the state from your note component and replace it with props
-
-## Add state to App
-
-1. In your app component add the following line
-
-```tsx
-const [notes, setNotes] = useState<Note[]>([]);
-```
-
-2. Create a `<button/>` that adds an additional note to the array when clicked.s
-
-3. Add the following to the html part of your component
-
-```tsx
-{notes.map((note, index) => <Note key={`note-${id}`} {/* Set up the note props here */} />)}
-```
+## Create a NoteEditor inside App.tsx to test it

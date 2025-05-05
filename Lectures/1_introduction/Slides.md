@@ -407,7 +407,7 @@ I recommend nvm
 
 Vite is a tool for developing react apps
 
-```
+```bash
 npm create vite@latest
 ```
 
@@ -419,7 +419,7 @@ npm create vite@latest
 
 # Running vite
 
-```
+```bash
 cd project-name
 npm install
 npm run dev
